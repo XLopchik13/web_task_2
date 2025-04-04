@@ -1,0 +1,39 @@
+.container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 200px;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.list button {
+  background: #f0f0f0;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list button:hover {
+  background-color: #e0e0e0;
+}
+
+.detail {
+  flex-grow: 1;
+}
