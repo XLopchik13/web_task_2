@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .container {
   padding: 20px;
   font-family: sans-serif;
@@ -5,12 +15,16 @@
 
 .layout {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
+  margin-left: auto;
+   margin-right: auto;
+  width: 28em
 }
 
 .list {
   list-style: none;
   padding: 0;
+  margin: 0;
   max-height: 80vh;
   overflow-y: auto;
   width: 200px;
@@ -36,4 +50,9 @@
 
 .detail {
   flex-grow: 1;
+}
+
+.photo img {
+  width: 170px;
+  border-radius: 10px;
 }

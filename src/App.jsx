@@ -36,11 +36,13 @@ function App() {
 
         {detail && (
           <div className="detail">
+            <div className="photo">
+              <img src={detail.flags.png} alt="Flag" width="150" />
+            </div>
             <h2>{detail.name.common}</h2>
             <p><strong>Capital:</strong> {detail.capital?.[0]}</p>
             <p><strong>Region:</strong> {detail.region}</p>
             <p><strong>Population:</strong> {detail.population.toLocaleString()}</p>
-            <img src={detail.flags.png} alt="Flag" width="150" />
           </div>
         )}
       </div>
