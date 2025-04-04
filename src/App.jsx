@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     if (selected) {
-      fetch(`https://restcountries.com/v3.1/alpha/${selected}`)
+      fetch(`https://restcountries.com/v3.1/name/${selected}`)
         .then(res => res.json())
         .then(data => setDetail(data[0]))
     }
@@ -27,7 +27,7 @@ function App() {
         <ul className="list">
           {countries.map(c => (
             <li key={c.cca3}>
-              <button onClick={() => setSelected(c.cca3)}>
+              <button onClick={() => setSelected(c.name.common)}>
                 {c.name.common}
               </button>
             </li>
