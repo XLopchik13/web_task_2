@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>🌍 Страны мира</h1>
+      <h1>🌍 Countries of the World</h1>
       <div className="layout">
         <ul className="list">
           {countries.map(c => (
@@ -37,10 +37,10 @@ function App() {
         {detail && (
           <div className="detail">
             <h2>{detail.name.common}</h2>
-            <p><strong>Столица:</strong> {detail.capital?.[0]}</p>
-            <p><strong>Регион:</strong> {detail.region}</p>
-            <p><strong>Население:</strong> {detail.population.toLocaleString()}</p>
-            <img src={detail.flags.png} alt="Флаг" width="150" />
+            <p><strong>Capital:</strong> {detail.capital?.[0]}</p>
+            <p><strong>Region:</strong> {detail.region}</p>
+            <p><strong>Population:</strong> {detail.population.toLocaleString()}</p>
+            <img src={detail.flags.png} alt="Flag" width="150" />
           </div>
         )}
       </div>
